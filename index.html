@@ -7,22 +7,22 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="header-container">
-      <div class="header-inner">
-        <a href="/" class="header-link">
-          <h1 class="main-header">NETCLICKS</h1>
-          <p class="main-subheader">всё о сериалах</p>
+    <header class="header__container">
+      <div class="header__inner">
+        <a href="/" class="header__link">
+          <h1 class="header__title">NETCLICKS</h1>
+          <p class="header__subtitle">всё о сериалах</p>
         </a>
       </div>
-      <div class="header-buttons">
+      <div class="header__buttons">
         <button
           onclick="window.location.href='/'"
           type="button"
-          class="account-button"
+          class="header__button-account"
         >
           Вход и регистрация
         </button>
-        <button type="button" class="burger-menu--button">
+        <button type="button" class="header__button-burger">
           <svg
             width="36.000000"
             height="36.000000"
@@ -62,13 +62,13 @@
         </button>
       </div>
     </header>
-    <section class="search-container">
-      <div class="search-container--inner">
+    <section class="search__container">
+      <div class="search__container-inner">
         <input type="text" placeholder="Что хотите посмотреть?" />
         <button
           onclick="window.location.href='/'"
           type="button"
-          class="search-button"
+          class="search__button"
         >
           <svg
             width="18.000000"
@@ -129,10 +129,114 @@
               fill-opacity="1.000000"
             />
           </svg>
-          <span class="button-text">Найти</span>
+          <span class="search__button-text">Найти</span>
         </button>
       </div>
-      <h2 class="search-result--header">Результаты поиска</h2>
     </section>
+    <main class="main__content">
+        <section class="main__cards">
+          <h2 class="main__title">Результаты поиска</h2>
+          <div class="main__item">
+            <div class="main__card-image">
+              <img src="img/card.png" alt="card" />
+            </div>
+            <div class="main__card-information">
+              <p class="main__card-title">
+                <span class="main__card-title--bold">Марсианин,</span> The Martian
+                2015
+              </p>
+              <p class="main__card-genre">Фантастика, приключения</p>
+              <p class="main__card-rating">7.8</p>
+            </div>
+          </div>
+          <div class="main__item">
+            <div class="main__card-image">
+              <img src="img/card.png" alt="card" />
+            </div>
+            <div class="main__card-information">
+              <p class="main__card-title">
+                <span class="main__card-title--bold">Марсианин,</span> The Martian
+                2015
+              </p>
+              <p class="main__card-genre">Фантастика, приключения</p>
+              <p class="main__card-rating">7.8</p>
+            </div>
+          </div>
+          <div class="main__item">
+            <div class="main__card-image">
+              <img src="img/card.png" alt="card" />
+            </div>
+            <div class="main__card-information">
+              <p class="main__card-title">
+                <span class="main__card-title--bold">Марсианин,</span> The Martian
+                2015
+              </p>
+              <p class="main__card-genre">Фантастика, приключения</p>
+              <p class="main__card-rating">7.8</p>
+            </div>
+          </div>
+          <div class="main__item">
+            <div class="main__card-image">
+              <img src="img/card.png" alt="card" />
+            </div>
+            <div class="main__card-information">
+              <p class="main__card-title">
+                <span class="main__card-title--bold">Марсианин,</span> The Martian
+                2015
+              </p>
+              <p class="main__card-genre">Фантастика, приключения</p>
+              <p class="main__card-rating">7.8</p>
+            </div>
+          </div>
+          <div class="main__item">
+            <div class="main__card-image">
+              <img src="img/card.png" alt="card" />
+            </div>
+            <div class="main__card-information">
+              <p class="main__card-title">
+                <span class="main__card-title--bold">Марсианин,</span> The Martian
+                2015
+              </p>
+              <p class="main__card-genre">Фантастика, приключения</p>
+              <p class="main__card-rating">7.8</p>
+            </div>
+          </div>
+          <div class="main__item">
+            <div class="main__card-image">
+              <img src="img/card.png" alt="card" />
+            </div>
+            <div class="main__card-information">
+              <p class="main__card-title">
+                <span class="main__card-title--bold">Марсианин,</span> The Martian
+                2015
+              </p>
+              <p class="main__card-genre">Фантастика, приключения</p>
+              <p class="main__card-rating">7.8</p>
+            </div>
+          </div>
+        </section>
+        <aside class="sidebar">
+            <div class="sidebar__categories">
+              <h3 class="sidebar__header">Подборки фильмов и сериалов</h2>
+              <div class="sidebar__category">
+                <h4 class="sidebar__title">Топ-250</h4>
+                <p class="sidebar__description">Подборка фильмов и сериалов с наивысшими оценками зрителей</p>
+              </div>
+              <div class="sidebar__category">
+                <h4 class="sidebar__title">Посмеяться от души</h4>
+                <p class="sidebar__description">Подборка комедий, которые помогут расслабиться после работы</p>
+              </div>
+              <div class="sidebar__category">
+                <h4 class="sidebar__title">Запутанный сюжет</h4>
+                <p class="sidebar__description">Триллеры и приключения с запутанным и интересным сюжетом. Невозможно оторваться!</p>
+              </div>
+            </div>
+            <footer class="footer">
+              <p class="footer__copyright">&copy; ООО «Неткликс», 2024;</p>
+              <a href="/" class="footer__privacy">Политика конфиденциальности</a>
+              <a href="/" class="footer__personal">Обработка персональных данных</a>
+            </footer>
+        </aside>
+      </main>
   </body>
 </html>

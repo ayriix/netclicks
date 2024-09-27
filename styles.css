@@ -68,23 +68,29 @@ button {
 .header__title {
   font-weight: 600;
 }
-.main__content {
+.content__wrapper {
   display: flex;
   gap: 32px;
-  padding: 24px 0 96px 0;
+  padding-bottom: 96px;
 }
-.main__title {
-  width: 100%;
+.main__cards > a {
+  color: #000;
+}
+.main__content {
+  flex: 3;
+}
+.main__results-title {
+  margin: 8px 0 20px 0;
 }
 .sidebar {
-  width: 350px;
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .sidebar__header {
-  font-size: 18px;
-  margin-bottom: 20px;
+  font-size: 16px;
+  margin-top: 16px;
 }
 .sidebar__title {
   margin-bottom: 4px;
@@ -92,14 +98,13 @@ button {
 }
 .sidebar__title,
 .sidebar__description {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 17px;
 }
 .main__cards {
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
-  width: 1200px;
 }
 .sidebar__categories {
   display: flex;
@@ -110,6 +115,7 @@ button {
   display: flex;
   flex-direction: column;
   gap: 4px;
+  margin-top: 8px;
 }
 .main__card-title--bold {
   font-weight: 700;
@@ -128,7 +134,7 @@ button {
   gap: 4px;
 }
 .footer > p,
-a {
+.footer > a {
   color: #aaa;
 }
 .footer__privacy,
@@ -158,7 +164,7 @@ a {
   .header__button-account {
     display: none;
   }
-  .main__content {
+  .content__wrapper {
     flex-wrap: wrap;
     padding: 24px 0;
   }
@@ -167,5 +173,9 @@ a {
   }
   .footer {
     margin-top: 120px;
+  }
+  .footer > p,
+  a {
+    font-size: 14px;
   }
 }

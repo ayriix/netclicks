@@ -1,0 +1,36 @@
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__inner {
+  display: flex;
+  flex-direction: column;
+}
+.header__subtitle {
+  font-size: 14px;
+}
+.header__button-account,
+.header__button-burger {
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 16px;
+}
+.header__button-burger {
+  display: none;
+}
+.header__button-account,
+.header__link {
+  color: #000;
+}
+.header__title {
+  font-weight: 600;
+}
+@media (max-width: 576px) {
+  .header__button-burger {
+    display: block;
+  }
+  .header__button-account {
+    display: none;
+  }
+}

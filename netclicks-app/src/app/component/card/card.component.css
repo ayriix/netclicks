@@ -1,0 +1,18 @@
+.main__card-information {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 8px;
+  color: #000;
+}
+.main__card-title--bold {
+  font-weight: 700;
+}
+.main__card-genre {
+  color: #868686;
+}
+.main__card-rating {
+  color: #04a31e;
+  font-weight: 700;
+  padding: 8px 0;
+}

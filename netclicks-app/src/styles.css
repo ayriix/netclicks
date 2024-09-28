@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  outline: none;
+  transition: padding 0.25s ease-in-out, margin 0.25s ease-in-out;
+  text-decoration: none;
+}
+body {
+  height: 100vh;
+  margin: 32px 150px;
+}
+button {
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  body {
+    margin: 32px 52px;
+  }
+}
+@media (max-width: 576px) {
+  body {
+    margin: 32px 24px;
+  }
+}

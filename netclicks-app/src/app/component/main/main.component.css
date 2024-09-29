@@ -22,15 +22,17 @@
   flex-direction: column;
   justify-content: space-between;
   flex: 1;
+  height: auto;
 }
 .sidebar__categories {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding-bottom: 20px;
 }
 .sidebar__header {
   font-size: 16px;
-  margin-top: 16px;
+  margin-top: 56px;
 }
 .footer {
   display: flex;

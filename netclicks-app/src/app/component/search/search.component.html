@@ -1,12 +1,14 @@
 <section class="search__container">
   <div class="search__container-inner">
     <input
+      [value]="searchString"
       id="search__input"
       type="text"
       placeholder="Что хотите посмотреть?"
+      (input)="updateValue($event)"
     />
     <button
-      onclick="window.location.href='#'"
+      (click)="updateSearch($event)"
       type="button"
       class="search__button"
       data-action="search"

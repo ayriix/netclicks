@@ -1,0 +1,74 @@
+<section class="content__wrapper">
+  <main class="main__content">
+    <h2 class="main__results-title">Результаты поиска</h2>
+    <section class="main__card-container">
+      @if (film) {
+      <div class="main__card">
+        <div class="main__card-image">
+          <img [src]="film.posterBig" alt="card" />
+        </div>
+        <div class="main__card-information">
+          <div class="main__card-inner">
+            <p class="main__card-title">
+              <span class="main__card-title--bold">{{ film.titleRu }},</span>
+              {{ film.titleEn }}
+            </p>
+            <p class="main__card-genre">
+              <span
+                *ngFor="let genre of film.genre; let i = index; let last = last"
+                >{{
+                  i === 0
+                    ? genre.charAt(0).toUpperCase() + genre.slice(1)
+                    : genre.toLowerCase()
+                }}<span *ngIf="!last">, </span></span
+              >
+            </p>
+            <p class="main__card-rating">{{ film.rating }}</p>
+            <p class="main__card-description">
+              {{ film.description }}
+            </p>
+          </div>
+          <div class="main__button-container">
+            <button
+              onclick="window.location.href='/'"
+              type="button"
+              class="main__button-watch"
+            >
+              Смотреть
+            </button>
+          </div>
+        </div>
+      </div>
+      }
+    </section>
+  </main>
+  <aside class="sidebar">
+    <div class="sidebar__categories">
+      <h3 class="sidebar__header">Подборки фильмов и сериалов</h3>
+      <div class="sidebar__category">
+        <h4 class="sidebar__title">Топ-250</h4>
+        <p class="sidebar__description">
+          Подборка фильмов и сериалов с наивысшими оценками зрителей
+        </p>
+      </div>
+      <div class="sidebar__category">
+        <h4 class="sidebar__title">Посмеяться от души</h4>
+        <p class="sidebar__description">
+          Подборка комедий, которые помогут расслабиться после работы
+        </p>
+      </div>
+      <div class="sidebar__category">
+        <h4 class="sidebar__title">Запутанный сюжет</h4>
+        <p class="sidebar__description">
+          Триллеры и приключения с запутанным и интересным сюжетом. Невозможно
+          оторваться!
+        </p>
+      </div>
+    </div>
+    <footer class="footer">
+      <p class="footer__copyright">&copy; ООО «Неткликс», 2024;</p>
+      <a href="/" class="footer__privacy">Политика конфиденциальности</a>
+      <a href="/" class="footer__personal">Обработка персональных данных</a>
+    </footer>
+  </aside>
+</section>

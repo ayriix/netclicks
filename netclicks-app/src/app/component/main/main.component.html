@@ -2,12 +2,9 @@
   <main class="main__content">
     <h2 class="main__results-title">Результаты поиска</h2>
     <section class="main__cards">
-      <app-card title="Марсианин 1"></app-card>
-      <app-card title="Марсианин 2"></app-card>
-      <app-card title="Марсианин 3"></app-card>
-      <app-card title="Марсианин 4"></app-card>
-      <app-card title="Марсианин 5"></app-card>
-      <app-card title="Марсианин 6"></app-card>
+      @for (film of films; track film.id) {
+      <app-card [film]="film"> </app-card>
+      }
     </section>
   </main>
   <aside class="sidebar">

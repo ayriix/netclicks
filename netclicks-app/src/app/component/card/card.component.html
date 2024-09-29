@@ -1,12 +1,21 @@
-<a href="/" class="main__item">
+<a [routerLink]="['/film', film.id]" class="main__item">
   <div class="main__card-image">
-    <img src="img/card.png" alt="card" />
+    <img [src]="film.poster" [alt]="film.titleRu" />
   </div>
   <div class="main__card-information">
     <p class="main__card-title">
-      <span class="main__card-title--bold">{{ title }},</span> The Martian 2015
+      <span class="main__card-title--bold">{{ film.titleRu }},</span>
+      {{ film.titleEn }}
     </p>
-    <p class="main__card-genre">Фантастика, приключения</p>
-    <p class="main__card-rating">7.8</p>
+    <p class="main__card-genre">
+      <span *ngFor="let genre of film.genre; let i = index; let last = last"
+        >{{
+          i === 0
+            ? genre.charAt(0).toUpperCase() + genre.slice(1)
+            : genre.toLowerCase()
+        }}<span *ngIf="!last">, </span></span
+      >
+    </p>
+    <p class="main__card-rating">{{ film.rating }}</p>
   </div>
 </a>
